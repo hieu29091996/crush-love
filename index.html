@@ -41,8 +41,8 @@
 
       <div class="content">
         <div class="music-control">
-          <!-- Phát nhạc tự động từ tệp đã tải về -->
-          <audio id="background-music" autoplay loop muted>
+          <!-- Thẻ audio ẩn để phát nhạc -->
+          <audio id="background-music" loop>
             <source src="./assets/musics/LamVoAnhNhe-ChiDan-3983777.mp3" type="audio/mpeg" />
             Your browser does not support the audio element.
           </audio>
@@ -90,9 +90,14 @@
     <script src="./assets/js/main.js"></script>
 
     <script>
-      window.addEventListener('load', function() {
+      // Xử lý sự kiện nhấn nút phát nhạc
+      document.querySelector('.btn--yes').addEventListener('click', function() {
         var audio = document.getElementById('background-music');
-        audio.muted = false; // Bật âm thanh sau khi trang đã tải xong
+        if (audio.paused) {
+          audio.play(); // Bắt đầu phát nhạc nếu chưa phát
+        } else {
+          audio.pause(); // Tạm dừng nhạc nếu đã phát
+        }
       });
     </script>
   </body>
