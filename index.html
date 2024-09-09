@@ -41,15 +41,9 @@
 
       <div class="content">
         <div class="music-control">
-          <!-- Nhúng nhạc từ NhacCuaTui -->
-          <iframe 
-            width="300" 
-            height="100" 
-            src="https://www.nhaccuatui.com/mh/background/DeVpyErFqYh4" 
-            frameborder="0" 
-            allow="autoplay" 
-            allowfullscreen>
-          </iframe>
+          <audio controls autoplay loop class="music">
+            <source src="./assets/musics/V1.wav" type="audio/wav" />
+          </audio>
         </div>
         <div class="answer-question">
           <button class="btn btn--yes"></button>
@@ -92,5 +86,6 @@
     <script src="./assets/js/RequestAnimationFrame.js"></script>
     <script src="./assets/js/heartParticle.js"></script>
     <script src="./assets/js/main.js"></script>
+
   </body>
 </html>
