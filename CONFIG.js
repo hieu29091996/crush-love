@@ -1,10 +1,11 @@
 const CONFIGDATA = {
-  titleHeader: "Chào Ly, Híu có điều muốn nói. </br> Làm người yêu Híuuu nhé kkk!",
-  descriptionHeader:
-    "Không ĐỒNG Ý cũng phải ĐỒNG Ý leuleu.",
+  titleHeader: "Chào Trangg xinhh, Híu có điều muốn nói. </br> Làm người yêu Híuuu nhé kkk!",
+descriptionHeader:
+    "Hãy trả lời một cách thật lòng nhé. Nếu cậu im lặng và rời đi thì tức là cậu đã ĐỒNG Ý kkk",
   buttonYes: "Tớ đồng ý",
   buttonNo: "Không đồng ý",
-  titleModar: "Cảm ơn cậu.",
+  titleModar: "♥️♥️♥️Cảm ơn Trangg ♥️♥️♥️",
   descriptionModar:
-    "Cảm ơn cậu đã cho tớ một cơ hội để tớ có thể ở bên cạnh, che chở và bảo vệ cậu. </br> Híu biết Híu không được đẹp trai lém kkk (nhưng đi đường gái cũng phải nhìn đó kkk), cũng chẳng lắm tài nhưng H có một trái tim chân thành.</br> Hẹn gặp e vào 1 một ngày đẹp trời, mát mẻ nhó, vì em thích mò kkk</br>  </br> Love you <3",
+    "Cảm ơn em đã cho tớ một cơ hội để tớ có thể ở bên cạnh, che chở và bảo vệ em. </br>Đã lâu rồi anh muốn nói với em điều này: Anh thích em. Không phải thích bình thường, mà là thích rất nhèoo, yêu cực nhiều ♥️</br> Em có biết không, mỗi lần gặp em là tim anh lại đập nhanh hơn một nhịp >.< Valentine này, cho anh được nắm tay, được ôm em nhé?</br> Love you ♥️♥️♥️",
 };
+
