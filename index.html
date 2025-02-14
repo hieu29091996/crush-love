@@ -28,77 +28,73 @@
     <title>::.. Thế Giới của Anh ^^ ..::</title>
   </head>
   <body>
-    <div class="container">
-      <div id="preloader">
-        <div class="spinner">
-          <div class="dashed-loading"></div>
-        </div>
-      </div>
-
-      <canvas id="pinkboard"></canvas>
-
-      <header class="header"></header>
-
-      <div class="content">
-        <div class="music-control">
-          <!-- Thẻ audio ẩn để phát nhạc -->
-          <audio id="background-music" loop>
-            <source src="./assets/musics/LamVoAnhNhe-ChiDan-3983777.mp3" type="audio/mpeg" />
-            Your browser does not support the audio element.
-          </audio>
-        </div>
-        <div class="answer-question">
-          <button class="btn btn--yes"></button>
-          <button class="btn btn--no"></button>
-        </div>
-      </div>
-      <!-- <footer class="footer">
-            <span class="footer-lisence">© 2021, Designed by
-                <a href="https://fb.com/100055545081553" class="footer-link">AndyNgoJs</a>
-            </span>
-        </footer> -->
-      <!-- Modal -->
-      <div class="modal">
-        <div class="modal__overlay"></div>
-        <div class="modal__body">
-          <div class="message-modal">
-            <div class="heading-name">
-              <h2 class="name"></h2>
-            </div>
-            <div class="heading-msg">
-              <p class="message"></p>
-            </div>
-            <div class="footer-modal">
-              <button class="btn btn-close">
-                <i class="btn-icon ti-close"></i>
-                Đóng
-              </button>
-            </div>
+      <div class="container">
+          <div id="preloader">
+              <div class="spinner">
+                  <div class="dashed-loading"></div>
+              </div>
           </div>
-        </div>
+
+          <canvas id="pinkboard"></canvas>
+
+          <header class="header"></header>
+
+          <div class="content">
+              <div class="music-control">
+                  <audio controls autoplay loop class="music">
+                      <source src="./assets/musics/LamVoAnhNhe.mp3" type="audio/mp3" />
+                  </audio>
+              </div>
+              <div class="answer-question">
+                  <button class="btn btn--yes"></button>
+                  <button class="btn btn--no"></button>
+              </div>
+          </div>
+          <!-- <footer class="footer">
+              <span class="footer-lisence">© 2021, Designed by
+                  <a href="https://fb.com/100055545081553" class="footer-link">AndyNgoJs</a>
+              </span>
+          </footer> -->
+          <!-- Modal -->
+          <div class="modal">
+              <div class="modal__overlay"></div>
+              <div class="modal__body">
+                  <div class="message-modal">
+                      <div class="heading-name">
+                          <h2 class="name"></h2>
+                      </div>
+                      <div class="heading-msg">
+                          <p class="message"></p>
+                      </div>
+                      <div class="footer-modal">
+                          <button class="btn btn-close">
+                              <i class="btn-icon ti-close"></i>
+                              Đóng
+                          </button>
+                      </div>
+                  </div>
+              </div>
+          </div>
       </div>
-    </div>
 
-    <script
-      type="text/javascript"
-      src="https://code.jquery.com/jquery-3.6.0.min.js"
-    ></script>
-    <script src="./CONFIG.js"></script>
-    <script src="./assets/js/setting.js"></script>
-    <script src="./assets/js/RequestAnimationFrame.js"></script>
-    <script src="./assets/js/heartParticle.js"></script>
-    <script src="./assets/js/main.js"></script>
+      <script type="text/javascript"
+              src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+      <script src="./CONFIG.js"></script>
+      <script src="./assets/js/setting.js"></script>
+      <script src="./assets/js/RequestAnimationFrame.js"></script>
+      <script src="./assets/js/heartParticle.js"></script>
+      <script src="./assets/js/main.js"></script>
+      <script>
+          document.addEventListener('DOMContentLoaded', function () {
+              const yesButton = document.querySelector('.btn--yes');
+              const audio = document.querySelector('.music');
 
-    <script>
-      // Xử lý sự kiện nhấn nút phát nhạc
-      document.querySelector('.btn--yes').addEventListener('click', function() {
-        var audio = document.getElementById('background-music');
-        if (audio.paused) {
-          audio.play(); // Bắt đầu phát nhạc nếu chưa phát
-        } else {
-          audio.pause(); // Tạm dừng nhạc nếu đã phát
-        }
-      });
-    </script>
+              // Khi bấm nút Yes => phát nhạc
+              yesButton.addEventListener('click', function () {
+                  audio.play();
+                  
+              });
+          });
+      </script>
   </body>
 </html>
